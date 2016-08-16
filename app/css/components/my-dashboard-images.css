@@ -1,0 +1,12 @@
+.dashboard-image {
+    composes: image-box from '../common/image-box';
+    composes: image-sizing from '../common/image-sizing';
+}
+
+.dashboard-image-username {
+    float:left;
+}
+
+.dashboard-image-details {
+    float:right;
+}

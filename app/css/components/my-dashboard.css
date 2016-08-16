@@ -1,0 +1,51 @@
+@value color-salem from '../common/colors.css';
+
+.file-upload-masonry {
+    composes: image-box from '../common/image-box';
+}
+
+.image-preview-style {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin:0 auto;
+    border-width:3px;
+    border-style:dashed;
+    border-color:gray;
+}
+
+.form-upload-name {
+  composes: input from '../common/input';
+
+  text-align: center;
+  width:100%;
+  display:block;
+  outline: none;
+}
+
+.form-upload-browse {
+  composes: button from '../common/button';
+  display:block;
+  margin-bottom: 1em;
+}
+
+.form-upload-submit {
+  composes: greenButton from '../common/button';
+  display:block;
+}
+
+.form-upload-progress {
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    height:15px;
+}
+
+.form-upload-progress > span {
+    display:block;
+    height:100%;
+    border-radius: 10px;
+    background-color: color-salem;
+    overflow: hidden;
+}
